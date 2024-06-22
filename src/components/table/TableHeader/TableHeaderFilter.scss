@@ -1,0 +1,42 @@
+//TableHeaderFilter.scss
+
+.table-header-filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 16px;
+    /* Adjust margin as needed */
+
+    label {
+        margin-right: 8px;
+        /* Space between label and select/input */
+        font-weight: bold;
+        /* Label font weight */
+    }
+
+    select {
+        padding: 8px;
+        /* Select box padding */
+        border: 1px solid #ccc;
+        /* Select box border */
+        border-radius: 4px;
+        /* Select box border radius */
+        font-size: 14px;
+        /* Select box font size */
+        min-width: 120px;
+        /* Minimum width for select box */
+    }
+
+    input {
+        padding: 8px;
+        /* Input box padding */
+        border: 1px solid #ccc;
+        /* Input box border */
+        border-radius: 4px;
+        /* Input box border radius */
+        font-size: 14px;
+        /* Input box font size */
+        flex: 1;
+        /* Input box take remaining space */
+    }
+}

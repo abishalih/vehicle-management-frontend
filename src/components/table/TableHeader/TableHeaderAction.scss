@@ -1,0 +1,35 @@
+.table-header-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Adjust margin as needed */
+}
+
+.action-button {
+    padding: 8px 16px;
+    /* Button padding */
+    border: none;
+    /* Remove button border */
+    border-radius: 4px;
+    /* Button border radius */
+    cursor: pointer;
+    /* Cursor type on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+    font-size: 14px;
+    /* Button font size */
+}
+
+.export-button {
+    background-color: #03DAC6;
+    /* Button background color */
+    color: #FFFFFF;
+    /* Button text color */
+    margin-right: 8px;
+    /* Space between buttons */
+}
+
+.action-button:hover {
+    background-color: #02afa1;
+    /* Button background color on hover */
+}
