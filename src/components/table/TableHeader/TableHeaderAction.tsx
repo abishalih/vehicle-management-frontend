@@ -18,10 +18,10 @@ const TableHeaderAction = ({ onExport, onCustomAction }: TableHeaderActionProps)
         <div className='table-header-action'>
             <div></div>
             <div>
-                <button className='action-button export-button' onClick={handleExport}>
+                <button className='table-header-action-button export-button' onClick={handleExport}>
                     Export Data
                 </button>
-                <button className='action-button' onClick={handleCustomAction}>
+                <button className='table-header-action-button' onClick={handleCustomAction}>
                     Custom Action
                 </button>
             </div>
