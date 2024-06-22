@@ -1,0 +1,26 @@
+/* table.css or any appropriate CSS file */
+.table-footer-pagination {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    /* Optional: Add margin to separate from content above */
+}
+
+.table-footer-pagination button {
+    padding: 8px 16px;
+    /* Adjust padding for buttons */
+    background-color: #007bff;
+    /* Example: Button background color */
+    color: #fff;
+    /* Example: Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-footer-pagination button:hover {
+    background-color: #0056b3;
+    /* Example: Hover state color */
+}

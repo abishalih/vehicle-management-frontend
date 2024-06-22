@@ -1,9 +1,31 @@
-type LayoutNavigationProps = {}
+import React, { ReactNode } from 'react';
+import './LayoutNavigation.css';
 
-const LayoutNavigation = (props: LayoutNavigationProps) => {
-  return (
-    <div>LayoutNavigation</div>
-  )
+interface LayoutNavigationProps {
+  children?: ReactNode;
+  menu: { id: string; label: string }[];
+  title?: string;
 }
 
-export default LayoutNavigation
+const LayoutNavigation: React.FC<LayoutNavigationProps> = ({ children, menu, title }) => {
+  const handleClick = (id: string) => {
+    console.log(id);
+    // Add navigation logic as needed
+  };
+
+  return (
+    <div className="layout-navigation">
+      <div className="app-title">{title}</div>
+      <div className="menu-buttons">
+        {menu.map(item => (
+          <button key={item.id} onClick={() => handleClick(item.id)} className="navigation-button">
+            {item.label}
+          </button>
+        ))}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+export default LayoutNavigation;

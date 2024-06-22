@@ -1,46 +1,45 @@
-import "./table.css";
-import TableHeader from "./TableHeader";
+import React from 'react';
+import TableFooter from './TableFooter';
+import TableHeader from './TableHeader';
+import './table.css';
 
-type TableColumnProps = {
+interface TableColumnProps {
     id: string;
     label: string;
 }
 
-type ComponentTableProps = {
+interface ComponentTableProps {
     columns: TableColumnProps[];
     dataSource: any[];
 }
 
-const ComponentTable = ({
-    columns,
-    dataSource
-}: ComponentTableProps) => {
+const ComponentTable: React.FC<ComponentTableProps> = ({ columns, dataSource }) => {
     return (
         <div className="component-table">
             <TableHeader />
-            <table border={1}>
+            <table className="data-table">
                 <thead>
                     <tr>
                         <th>#</th>
-                        {columns.map(({ label }) => (
-                            <th>{label}</th>
+                        {columns.map(({ id, label }) => (
+                            <th key={id}>{label}</th>
                         ))}
                     </tr>
                 </thead>
                 <tbody>
-                    {dataSource.map((data, key) => (
-                        <tr key={key}>
-                            <td align="center">{key + 1}</td>
+                    {dataSource.map((data, index) => (
+                        <tr key={index}>
+                            <td align="center">{index + 1}</td>
                             {columns.map(({ id }) => (
-                                <td align="center">{data[id]}</td>
+                                <td key={id} align="center">{data[id]}</td>
                             ))}
                         </tr>
                     ))}
                 </tbody>
             </table>
-            <div>Pagination</div>
+            <TableFooter />
         </div>
-    )
-}
+    );
+};
 
-export default ComponentTable
+export default ComponentTable;

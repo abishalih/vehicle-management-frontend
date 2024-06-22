@@ -9,7 +9,10 @@ type ComponentLayoutProps = {
 const ComponentLayout = ({ children }: ComponentLayoutProps) => {
     return (
         <div className='app-layout'>
-            <LayoutNavigation />
+            <LayoutNavigation menu={[
+                { id: "dashboard", label: "Dashboard" },
+                { id: "setting", label: "Setting" },
+            ]} title={"Vehicle Management"} />
             <div className="app-layout-container">
                 {children}
             </div>
