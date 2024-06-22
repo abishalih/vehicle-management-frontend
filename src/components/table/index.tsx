@@ -1,7 +1,7 @@
 import React from 'react';
 import TableFooter from './TableFooter';
 import TableHeader from './TableHeader';
-import './table.css';
+import './table.scss';
 
 interface TableColumnProps {
     id: string;

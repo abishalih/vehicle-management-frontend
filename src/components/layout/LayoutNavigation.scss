@@ -1,0 +1,60 @@
+// Import global variables from a relative path
+@import '../../styles/variables';
+
+.layout-navigation {
+    background-color: $secondary-color; // Using the secondary color (light mode)
+    color: $text-color; // Using the text color (light mode)
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Adding specified box shadow
+
+    .app-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .menu-buttons {
+        display: grid;
+        gap: 10px;
+    }
+
+    .navigation-button {
+        padding: 8px 0;
+        background-color: $background-color; // Using the background color for buttons (light mode)
+        color: $text-color; // Using the text color (light mode)
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+            background-color: $hover-color; // Using the hover color for buttons (light mode)
+        }
+    }
+}
+
+// Dark Mode Styles
+body.dark-mode {
+    .layout-navigation {
+        background-color: $surface-color-dark; // Using the surface color for background (dark mode)
+        color: $text-color-dark; // Using the text color (dark mode)
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Adding specified box shadow for dark mode
+    }
+
+    .navigation-button {
+        background-color: $surface-color-dark; // Using the surface color for buttons (dark mode)
+        color: $text-color-dark; // Using the text color (dark mode)
+
+        &:hover {
+            background-color: $hover-color-dark; // Using the hover color for buttons (dark mode)
+        }
+    }
+}

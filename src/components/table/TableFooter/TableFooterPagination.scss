@@ -1,0 +1,37 @@
+// Import global variables from a relative path
+@import '../../../styles/variables';
+
+.table-footer-pagination {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.table-footer-pagination button {
+    padding: 8px 16px;
+    background-color: $secondary-color; // Using the secondary color for buttons (light mode)
+    color: $text-color; // Using the text color for buttons (light mode)
+    border: 1px solid $border-color; // Adding border with the border color
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $background-color; // Using the background color for buttons on hover (light mode)
+    }
+}
+
+// Dark Mode Styles
+body.dark-mode {
+    .table-footer-pagination button {
+        background-color: $surface-color-dark; // Using the surface color for buttons (dark mode)
+        color: $text-color-dark; // Using the text color for buttons (dark mode)
+        border-color: $border-color-dark; // Border color for dark mode
+
+        &:hover {
+            background-color: $background-color-dark; // Using the background color for buttons on hover (dark mode)
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 import LayoutNavigation from "./LayoutNavigation"
-import './layout.css'
+import './layout.scss'
 
 type ComponentLayoutProps = {
     children: ReactNode

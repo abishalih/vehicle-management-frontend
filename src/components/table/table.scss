@@ -1,0 +1,74 @@
+// Import global variables from a relative path
+@import '../../styles/variables';
+
+// Define styles for light mode
+.component-table {
+    display: grid;
+    gap: 1rem;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: $primary-color; // Using the primary color for text
+
+    th,
+    td {
+        padding: 6px 10px;
+        border: 1px solid $border-color; // Using the border color
+        text-align: center;
+    }
+
+    th {
+        background-color: $secondary-color; // Using the secondary color for header
+        color: $primary-color; // Using the primary color for text in header
+    }
+
+    td {
+        background-color: $background-color; // Using the background color for table cells
+    }
+
+    tr:hover td {
+        background-color: $hover-color; // Using the hover color for table rows
+    }
+}
+
+// Define styles for dark mode
+body.dark-mode {
+    .component-table {
+        display: grid;
+        gap: 1rem;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        color: $primary-color-dark; // Using the primary dark color for text
+
+        th,
+        td {
+            padding: 6px 10px;
+            border: 1px solid $border-color-dark; // Using the border color for dark mode
+            text-align: center;
+        }
+
+        th {
+            background-color: $secondary-color-dark; // Using the secondary dark color for header
+            color: $primary-color-dark; // Using the primary dark color for text in header
+        }
+
+        td {
+            background-color: $surface-color-dark; // Using the surface color for dark mode table cells
+        }
+
+        tr:hover td {
+            background-color: $hover-color-dark; // Using the hover color for dark mode table rows
+        }
+    }
+}

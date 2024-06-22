@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import './card.css';
+import './card.scss';
 
 type CardProps = {
     children: ReactNode;

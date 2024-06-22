@@ -1,0 +1,21 @@
+// src/styles/_variables.scss
+
+// Light Mode
+$primary-color: #6200EE; // A vibrant purple
+$secondary-color: #03DAC6; // A contrasting teal
+$background-color: #FFFFFF; // Standard white background
+$surface-color: #F5F5F5; // Light gray surface color
+$error-color: #B00020; // A strong red for errors
+$hover-color: #EDE7F6; // A lighter shade of purple for hover
+$border-color: #E0E0E0; // Light gray for borders
+$text-color: #212121; // Dark gray for text
+
+// Dark Mode
+$primary-color-dark: #BB86FC; // A lighter purple for dark mode
+$secondary-color-dark: #03DAC5; // Teal with a slight adjustment for visibility
+$background-color-dark: #121212; // Almost black background
+$surface-color-dark: #1E1E1E; // Dark gray for surfaces
+$error-color-dark: #CF6679; // Softer red for errors in dark mode
+$hover-color-dark: #3700B3; // Dark purple for hover in dark mode
+$border-color-dark: #333333; // Darker gray for borders
+$text-color-dark: #E0E0E0; // Light gray for text

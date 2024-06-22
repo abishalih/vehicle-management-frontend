@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import './LayoutNavigation.css';
+import './LayoutNavigation.scss';
 
 interface LayoutNavigationProps {
   children?: ReactNode;

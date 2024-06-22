@@ -1,4 +1,4 @@
-import './TableFooter.css'
+import './TableFooter.scss'
 import TableFooterPagination from './TableFooterPagination'
 type TableFooterProps = {}
 

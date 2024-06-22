@@ -1,5 +1,5 @@
 import React from 'react';
-import './TableFooterPagination.css';
+import './TableFooterPagination.scss';
 
 interface TableFooterPaginationProps {
     currentPage: number;
